@@ -1,4 +1,4 @@
-$!/usr/bin/env bash
+#!/usr/bin/env bash
 
 git clone https://github.com/galaxy3-net/galaxy3.git ~/galaxy3
 
