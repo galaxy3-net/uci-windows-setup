@@ -7,3 +7,5 @@ choco install -y virtualbox
 choco install -y vagrant
 choco install -y winscp
 choco install -y autopsy
+choco install -y intellijidea-community
+choco install -y goland
