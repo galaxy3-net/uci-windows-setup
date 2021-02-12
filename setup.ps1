@@ -5,3 +5,5 @@ choco install -y git.install
 choco install -y python3
 choco install -y virtualbox
 choco install -y vagrant
+choco install -y winscp
+choco install -y autopsy
