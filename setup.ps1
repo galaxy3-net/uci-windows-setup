@@ -10,3 +10,5 @@ choco install -y autopsy
 choco install -y intellijidea-community
 choco install -y goland
 choco install -y wireshark
+choco install -y gpg4win
+choco install -y slack

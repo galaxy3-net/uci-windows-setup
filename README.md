@@ -3,7 +3,7 @@ Setting up Windows for UCI Cybersecurity Bootcamp
 
 ## Install Base Packages
 
-Follow the instructions below for setting up the "UCI Cybersecurity Bootcamp" tools on your Windows desktop or laptop.  If there are errors, Windows sometimes has issues, sometimes there are Internet issues.  There is a demonstration video of the installation here: [video demonstration](https://youtu.be/Mc7-j4RJAGw).  In the video, I do run into some Windows errors, I demonstrate how to work around them.  Have patience!
+Follow the instructions below for setting up the "UCI Cybersecurity Bootcamp" tools on your Windows desktop or laptop.  If there are errors, Windows sometimes has issues, sometimes there are Internet issues.  There is a demonstration video of the installation here: [video demonstration](https://www.youtube.com/watch?v=Mc7-j4RJAGw&feature=youtu.be).  In the video, I do run into some Windows errors, I demonstrate how to work around them.  Have patience!
 
 If you are running on MacOS, go to the following repostitory for instructions.
 
