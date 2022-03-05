@@ -12,3 +12,4 @@ choco install -y goland
 choco install -y wireshark
 choco install -y gpg4win
 choco install -y slack
+choco install -y royalts-v6
