@@ -13,3 +13,8 @@ choco install -y wireshark
 choco install -y gpg4win
 choco install -y slack
 choco install -y royalts-v6
+
+$zipFile = "https://drive.google.com/uc?export=download&id=1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3"
+Invoke-WebRequest -Uri $zipFile -OutFile "$($env:TEMP)\Documents\UCI-Cybersecurity.rtsz"
+
+# https://drive.google.com/file/d/1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3/view?usp=sharing
