@@ -21,6 +21,7 @@ if (Test-Path $RTSZFile)
 }
 else
 {
+    Write-Debug "Copying $RTSZFile
     $zipFile = "https://drive.google.com/uc?export=download&id=1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3"
     Invoke-WebRequest -Uri $zipFile -OutFile $RTSZFile
 }
