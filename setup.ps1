@@ -22,11 +22,12 @@ if (Test-Path $RTSZFile)
 else
 {
     Write-Debug "Copying $RTSZFile"
-    $zipFile = "https://drive.google.com/uc?export=download&id=1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3"
+    # $zipFile = "https://drive.google.com/uc?export=download&id=1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3"
+    $zipFile =
     Invoke-WebRequest -Uri $zipFile -OutFile $RTSZFile
 }
 
-$zipFile = "https://drive.google.com/uc?export=download&id=1VCwMDZxSi-Yv-kyAYetYPWDkF7FYLQM4"
+#$zipFile = "https://drive.google.com/uc?export=download&id=1VCwMDZxSi-Yv-kyAYetYPWDkF7FYLQM4"
 Invoke-WebRequest -Uri $zipFile -OutFile "$HOME\Documents\UCI-Cybersecurity.html"
 
 # https://drive.google.com/file/d/1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3/view?usp=sharing
