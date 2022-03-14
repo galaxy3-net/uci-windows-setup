@@ -1,20 +1,34 @@
 # uci-windows-setup
 Setting up Windows for UCI Cybersecurity Bootcamp
 
+## Create UCIUSER
+
+UCIUSER is the user account used for all classes.
+
+This account will be used to install all Windows packages and run the virtual machines.
+
+1. Using a Windows user account that has administravice rights, do the following.
+2. Run the following command:
+~~~~
+iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1 -UseBasicParsing | iex
+~~~~
+2. Now that the USIUSER account has been created, switch user to UCIUSER using the password that you just set.
+
 ## Install Base Packages
 
-Follow the instructions below for setting up the "UCI Cybersecurity Bootcamp" tools on your Windows desktop or laptop.  If there are errors, Windows sometimes has issues, sometimes there are Internet issues.  There is a demonstration video of the installation here: [video demonstration](https://www.youtube.com/watch?v=Mc7-j4RJAGw&feature=youtu.be).  In the video, I do run into some Windows errors, I demonstrate how to work around them.  Have patience!
+Now that you are logged into the UCIUSER account, follow the instructions below for setting up the "UCI Cybersecurity Bootcamp" tools on your Windows desktop or laptop.  If there are errors, Windows sometimes has issues, sometimes there are Internet issues.  There is a demonstration video of the installation here: [video demonstration](https://www.youtube.com/watch?v=Mc7-j4RJAGw&feature=youtu.be).  In the video, I do run into some Windows errors, I demonstrate how to work around them.  Have patience!
 
 If you are running on MacOS, go to the following repostitory for instructions.
+
+:Warning: Only MacOS running on x86 architecture is supported.  The M1 architecture does not support x86 virtualization.
 
 #### Now Let's Install
 
 1. Open a Powershell Admin (see example below) ![](Images/Powershell-Start-Admin-50.jpg#thumbnail)
 2. When prompted, click Allow/Yes to the UAC prompt.
-3. Run the following commands in Powershell
+3. In the same Powershell, run the following commands.
 ~~~~
 iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/setup.ps1 -UseBasicParsing | iex
-bash -c "$(curl -s https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/setup.sh)"
 ~~~~
 
 That should be it, you should now have the following packages installed on your Windows machine.
@@ -29,7 +43,20 @@ That should be it, you should now have the following packages installed on your 
 8. IntelliJ Idea
 9. GoLand
 10. Wireshark
-11. Galaxy3
+11. RoyalTS
+
+## Install Galaxy3 Entironment
+
+Now let's install the Galaxy3 virtualization environment.  This is where the virtual machine UCIBOX will run, among others.
+
+1. Be sure that you are logged into the UCIUSER account.
+2. Open a Powershell with Administrative Privileges.
+3. Run the following command.
+
+~~~~
+bash -c "$(curl -s https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/setup.sh)"
+~~~~
+
 
 ## References
 [Start and Configure OpenSSH Server](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
