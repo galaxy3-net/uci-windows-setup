@@ -50,7 +50,7 @@ That should be it, you should now have the following packages installed on your 
 Now let's install the Galaxy3 virtualization environment.  This is where the virtual machine UCIBOX will run, among others.
 
 1. Be sure that you are logged into the UCIUSER account.
-2. Open a Powershell with Administrative Privileges.
+2. Open a Gitbash with Administrative Privileges.
 3. Run the following command.
 
 ~~~~
