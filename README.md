@@ -5,7 +5,9 @@ Setting up Windows for UCI Cybersecurity Bootcamp
   1. [Stage I](https://youtu.be/lKh7naJwGt8)
   2. [Stage II](https://youtu.be/TLGMrwu8pIg)
 
-## Create UCIUSER
+## Stage I - Create the UCIUSER & Install Tools
+
+### Create UCIUSER
 
 UCIUSER is the user account used for all classes.
 
@@ -19,7 +21,7 @@ iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User
 ~~~~
 4. Now that the UCIUSER account has been created, switch user to UCIUSER using the password that you just set.
 
-## Install Base Packages
+### Install Base Packages
 
 Now that you are logged into the UCIUSER account, follow the instructions below for setting up the "UCI Cybersecurity Bootcamp" tools on your Windows desktop or laptop.  If there are errors, Windows sometimes has issues, sometimes there are Internet issues.  There is a demonstration video of the installation here: [video demonstration](https://www.youtube.com/watch?v=Mc7-j4RJAGw&feature=youtu.be).  In the video, I do run into some Windows errors, I demonstrate how to work around them.  Have patience!
 
@@ -51,7 +53,7 @@ That should be it, you should now have the following packages installed on your 
 10. Wireshark
 11. RoyalTS
 
-## Install Galaxy3 Entironment
+## Stage II: Install Galaxy3 Environment
 
 Now let's install the Galaxy3 virtualization environment.  This is where the virtual machine UCIBOX will run, among others.
 
