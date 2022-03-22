@@ -1,6 +1,10 @@
 # uci-windows-setup
 Setting up Windows for UCI Cybersecurity Bootcamp
 
+### View Setup Demo Videos Here
+  1. [Stage I](https://youtu.be/lKh7naJwGt8)
+  2. [Stage II](https://youtu.be/TLGMrwu8pIg)
+
 ## Create UCIUSER
 
 UCIUSER is the user account used for all classes.
@@ -8,11 +12,12 @@ UCIUSER is the user account used for all classes.
 This account will be used to install all Windows packages and run the virtual machines.
 
 1. Using a Windows user account that has administravice rights, do the following.
-2. Run the following command:
+2. Start a Powershell with Administrative Rights.
+3. In the Powershell window run the following command:
 ~~~~
 iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1 -UseBasicParsing | iex
 ~~~~
-2. Now that the USIUSER account has been created, switch user to UCIUSER using the password that you just set.
+4. Now that the UCIUSER account has been created, switch user to UCIUSER using the password that you just set.
 
 ## Install Base Packages
 
@@ -24,9 +29,10 @@ If you are running on MacOS, go to the following repostitory for instructions.
 
 #### Now Let's Install
 
-1. Open a Powershell Admin (see example below) ![](Images/Powershell-Start-Admin-50.jpg#thumbnail)
-2. When prompted, click Allow/Yes to the UAC prompt.
-3. In the same Powershell, run the following commands.
+1. Now that you are logged into the UCIUSER account, do the following.
+2. Open a Powershell Admin (see example below) ![](Images/Powershell-Start-Admin-50.jpg#thumbnail)
+3. When prompted, click Allow/Yes to the UAC prompt.
+4. In the same Powershell, run the following commands.
 ~~~~
 iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/setup.ps1 -UseBasicParsing | iex
 ~~~~
@@ -50,7 +56,7 @@ That should be it, you should now have the following packages installed on your 
 Now let's install the Galaxy3 virtualization environment.  This is where the virtual machine UCIBOX will run, among others.
 
 1. Be sure that you are logged into the UCIUSER account.
-2. Open a Gitbash with Administrative Privileges.
+2. Open a Gitbash with Administrative Rights.
 3. Run the following command.
 
 ~~~~
