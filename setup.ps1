@@ -36,7 +36,7 @@ else
 {
     Write-Debug "Copying $RTSZFile"
     # $zipFile = "https://drive.google.com/uc?export=download&id=1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3"
-    $zipFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/files/Azure Labs.rtsz"
+    $zipFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/files/Azure Labs curfff.rtsz"
     Invoke-WebRequest -Uri $zipFile -OutFile $RTSZFile
 }
 
