@@ -43,6 +43,10 @@ Steps
 ~~~~
 iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1 -UseBasicParsing | iex
 ~~~~
+
+~~~~
+& ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1')))
+~~~~
 4. [ ] When prompted for a password, enter the password stored in step 2.
 5. [ ] Now that the UCIUSER account has been created, switch user to UCIUSER using the password that you just set.
 
