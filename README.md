@@ -40,9 +40,6 @@ Steps
 3. [ ] Using a Windows user account that has administrive rights, do the following.
 4. [ ] Start a Powershell with Administrative Rights.
 5. [ ] In the Powershell window run the following command:
-~~~~
-iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1 -UseBasicParsing | iex
-~~~~
 
 ~~~~
 & ([scriptblock]::Create((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1')))
@@ -117,3 +114,6 @@ bash -c "$(curl -s https://raw.githubusercontent.com/galaxy3-net/uci-windows-set
 
 ## References
 [Start and Configure OpenSSH Server](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+~~~~
+iwr https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/New-User.ps1 -UseBasicParsing | iex
+~~~~
