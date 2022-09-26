@@ -1,18 +1,27 @@
+function Append-Package {
+    param (
+        [string[]]$NewPackage
+    )
+    $Global:Packages = $Global:Packages + ' ' + $NewPackage
+}
+$Global:Packages = ''
 Write-Output 'Setup for UCI Cybersecurity Bootcamp'
 Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
-choco install -y VisualStudioCode
-choco install -y git.install
-choco install -y python3
-choco install -y virtualbox
-choco install -y vagrant
-choco install -y winscp
-choco install -y autopsy
-choco install -y intellijidea-community
-choco install -y goland
-choco install -y wireshark
-choco install -y gpg4win
-choco install -y slack
-choco install -y royalts-v6
+Append-Package VisualStudioCode
+Append-Package git.install
+Append-Package python3
+Append-Package virtualbox
+Append-Package vagrant
+Append-Package winscp
+Append-Package autopsy
+Append-Package intellijidea-community
+Append-Package goland
+Append-Package wireshark
+Append-Package gpg4win
+Append-Package slack
+Append-Package royalts-v6
+choco install $Global:Packages.split() -y
+choco upgrade $Global:Packages.split() -y
 
 $RTSZFile = "$HOME\Documents\UCI-Cybersecurity.rtsz"
 if (Test-Path $RTSZFile)
