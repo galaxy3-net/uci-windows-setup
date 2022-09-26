@@ -11,4 +11,4 @@ $SourceFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/d
 Invoke-WebRequest -Uri $SourceFile -OutFile "C:\Users\Public\Desktop\Phase-I.ps1"
 
 $SourceFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/files/UCI-Cybersecurity.html"
-Invoke-WebRequest -Uri $SourceFile -OutFile "C:\Users\Public\Desktop\UCI-Cybersecurity.html"
+Invoke-WebRequest -Uri $SourceFile -OutFile "C:\Users\Public\Downloads\UCI-Cybersecurity.html"
