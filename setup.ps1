@@ -44,7 +44,7 @@ else
 $zipFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/files/UCI-Cybersecurity.html"
 Invoke-WebRequest -Uri $zipFile -OutFile "$HOME\Documents\UCI-Cybersecurity.html"
 
-$SourceFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/Phase-II.ps1"
+$SourceFile = "https://raw.githubusercontent.com/galaxy3-net/uci-windows-setup/dev/Phase-II.sh"
 Invoke-WebRequest -Uri $SourceFile -OutFile "C:\Users\Public\Desktop\Phase-II.sh"
 
 # https://drive.google.com/file/d/1S-5U8eSWxNzXSNftmVctrUD6fRl4oVb3/view?usp=sharing
