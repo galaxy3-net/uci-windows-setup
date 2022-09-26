@@ -3,7 +3,7 @@ param(
     [String]$MyUser = "uciuser"
 )
 $PASSWORD = Read-Host -Prompt "Enter Password for $MyUser" -AsSecureString
-New-LocalUser -name $MyUser -Password $PASSWORD -ErrorAction Continue ; Write-Host "$MyUser already exists, continuing"
+New-LocalUser -name $MyUser -Password $PASSWORD -ErrorAction Inquire ; Write-Host "$MyUser already exists, continuing"
 
 Add-LocalGroupMember -Group "Administrators" -Member $MyUser
 
