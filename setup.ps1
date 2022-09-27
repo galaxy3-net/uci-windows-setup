@@ -20,8 +20,8 @@ Append-Package wireshark
 Append-Package gpg4win
 Append-Package slack
 Append-Package royalts-v6
-choco install $Global:Packages.split() -y
-choco upgrade $Global:Packages.split() -y
+choco install $Global:Packages.split() -y -ErrorAction Inquire ; Write-Host " continuing . . ."
+choco upgrade $Global:Packages.split() -y -ErrorAction Inquire ; Write-Host " continuing . . ."
 
 $RTSZFile = "$HOME\Documents\UCI-Cybersecurity.rtsz"
 if (Test-Path $RTSZFile)
